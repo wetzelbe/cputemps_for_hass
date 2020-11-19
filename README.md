@@ -23,32 +23,32 @@ The following yaml is the configuration at the Home-Assistant. You can put in th
     sensor:
      - platform: mqtt
        name: "Core 0 Temperature"
-       state_topic: "docker_machine/cputemps"
+       state_topic: "sensors/cputemps"
        unit_of_measurement: '°C'
        value_template: "{{ value_json.core0temperature }}"
      - platform: mqtt
        name: "Core 1 Temperature"
-       state_topic: "docker_machine/cputemps"
+       state_topic: "sensors/cputemps"
        unit_of_measurement: '°C'
        value_template: "{{ value_json.core1temperature }}"
      - platform: mqtt
        name: "Core 2 Temperature"
-       state_topic: "docker_machine/cputemps"
+       state_topic: "sensors/cputemps"
        unit_of_measurement: '°C'
        value_template: "{{ value_json.core2temperature }}"
      - platform: mqtt
        name: "Core 3 Temperature"
-       state_topic: "docker_machine/cputemps"
+       state_topic: "sensors/cputemps"
        unit_of_measurement: '°C'
        value_template: "{{ value_json.core3temperature }}"
      - platform: mqtt
        name: "Average Core Temperature"
-       state_topic: "docker_machine/cputemps"
+       state_topic: "sensors/cputemps"
        unit_of_measurement: '°C'
        value_template: "{{ value_json.avgcoretemperature }}"
      - platform: mqtt
        name: "Highest Core Temperature"
-       state_topic: "docker_machine/cputemps"
+       state_topic: "sensors/cputemps"
        unit_of_measurement: '°C'
        value_template: "{{ value_json.peakcoretemperature }}"
   
