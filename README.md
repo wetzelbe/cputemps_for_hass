@@ -1,0 +1,1 @@
+# cputemps_for_hass
